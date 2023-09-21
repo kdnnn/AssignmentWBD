@@ -1,0 +1,18 @@
+body {
+    background-image: url('feed.png');
+}
+.newsletter {
+    text-align: center;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    padding-top: 100px;
+}
+.newsletter > img {
+    mix-blend-mode: difference;
+}
+.newsletter > img:hover {
+    mix-blend-mode: normal;
+}
+.newsletter > .cute {
+    mix-blend-mode: normal;
+}

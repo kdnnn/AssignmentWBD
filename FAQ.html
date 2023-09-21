@@ -1,40 +1,133 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" Property, Rentals, Malaysia>
-        <title>Frequently Asked Questions</title>
-        <link href="layout.css" rel="stylesheet">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
-          </style>
-        <body>
-            <header>
-                <a href="index.html"><img src="PropertyHub.png" alt="logo" class="logo" width="200px"></a>
-                <img src="gura.gif" class="gif" width="50px" height="50px">
-            </header>
-                <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                      <span></span>
-                    </label>
-                    <ul class="menu__box">
-                        <li><a class="menu__item" href="index.html">Home</a></li>
-                        <li><a class="menu__item" href="news.html">News</a></li>
-                        <li><a class="menu__item" href="listings.html">Listings</a></li>
-                        <li><a class="menu__item" href="rent.html">Rentals</a></li>
-                        <li><a class="menu__item" href="payment.html">Payment</a></li>
-                        <li><a class="menu__item" href="loancalculator.html">Loan Calculator</a></li>
-                        <li><a class="menu__item" href="contact.html">Contact Us</a></li>
-                        <li><a class="menu__item" href="about.html">About Us</a></li>
-                        <li><a class="menu__item" href="subscribe.html">Subscribe</a></li>
-                        <li><a class="menu__item" href="advertise.html">Advertise</a></li>
-                        <li><a class="menu__item" href="feedback.html">Feedback</a></li>
-                        <li><a class="menu__item" href="FAQ.html">FAQ</a></li>
-                    </ul>
-                  </div>
-            </body>
-        <footer>
-            PropertyHub Malaysia Sdn. Bhd.
-        </footer>
+
+<head>
+  <meta charset="UTF-8" Property, Rentals, Malaysia>
+  <title>Frequently Asked Questions</title>
+  <link href="layout.css" rel="stylesheet">
+  <link href="FAQ.css" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+  </style>
+
+<body>
+  <header>
+    <a href="index.html"><img src="PropertyHub.png" alt="logo" class="logo" width="200px"></a>
+    <img src="gura.gif" class="gif" width="50px" height="50px">
+  </header>
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+    <ul class="menu__box">
+      <li><a class="menu__item" href="index.html">Home</a></li>
+      <li><a class="menu__item" href="news.html">News</a></li>
+      <li><a class="menu__item" href="listings.html">Listings</a></li>
+      <li><a class="menu__item" href="rent.html">Rentals</a></li>
+      <li><a class="menu__item" href="payment.html">Payment</a></li>
+      <li><a class="menu__item" href="loancalculator.html">Loan Calculator</a></li>
+      <li><a class="menu__item" href="contact.html">Contact Us</a></li>
+      <li><a class="menu__item" href="about.html">About Us</a></li>
+      <li><a class="menu__item" href="subscribe.html">Subscribe</a></li>
+      <li><a class="menu__item" href="advertise.html">Advertise</a></li>
+      <li><a class="menu__item" href="feedback.html">Feedback</a></li>
+      <li><a class="menu__item" href="FAQ.html">FAQ</a></li>
+    </ul>
+  </div>
+
+  <img src="faq.png" alt="RENTER FAQS" img id="center">
+  
+  <h1>General questions</h1>
+
+  <button class="accordion">Who can I contact for questions on billing and my invoices?</button>
+  <div class="panel">
+    <p>We're happy to help! Call us at <a href="tel:601116119380" target="_blank">+601116119380</a>
+      to talk through your billing questions.</p>
+  </div>
+
+  <button class="accordion">What is my security deposit for?</button>
+  <div class="panel">
+    <p>The security deposit is a set amount of money that the landlord takes from you as collateral for the structural
+      integrity and cleanliness of the house. In other words, this money is set aside by the landlord to inspire tenants
+      to take good care of their rental property, and if you don't, it gives them the opportunity to recoup those
+      losses.</p>
+  </div>
+
+  <button class="accordion">How do I get my security deposit back?</button>
+  <div class="panel">
+    <p>If you keep the house in good condition and don't inflict any damages on the property, then you will
+      get your security deposit back
+      at the end of your lease. To ensure that there are no misunderstandings between you and the landlord,
+      be sure to take inventory of
+      any wear-and-tear you see when you move in, preferably via photo. This way no pre-existing damages can
+      be mistakenly blamed on you
+      and you can get your security deposit returned fair and square. Generally, landlords are required to
+      return the security deposit 30 days after the lease ends.</p>
+  </div>
+
+  <button class="accordion">What are utilities and how are they paid for?</button>
+  <div class="panel">
+    <p>Utilities are the basics you need any housing unit: electricity, heat, water, trash pickup. Sometimes these
+      bills are included in
+      your rent payment and are handled by your landlord, but other times the tenant directly receives the bill.
+      Be sure to ask your landlord
+      about utilities before signing the lease so you know what you'll be expected to pay for.</p>
+  </div>
+
+  <button class="accordion">What is the difference between a month-to-month and a fixed-term lease?</button>
+  <div class="panel">
+    <p>It is very important to know the difference between these two terms, as they will determine how long you'll
+      stay at a place and sometimes
+      even the rent price. A fixed-term lease is an agreement that states the tenant will remain in the apartment
+      or home for a pre-determined
+      amount of time usually a year. Month-to-month leases also tend to have higher rent prices because the
+      landlord is not guaranteed income
+      for the next month. Unless you are in a precarious or time-sensitive situation, it's often a better
+      financial call to go with the fixed-term lease.</p>
+  </div>
+
+  <button class="accordion">Can a landlord raise my rent during my stay?</button>
+  <div class="panel">
+    <p>Landlords are allowed to raise the rent once the lease has expired. If you decide to stay in the same apartment
+      next year, you should read your new lease carefully and make sure the rates haven't gone up. If they have, see if
+      you can negotiate with your landlord. If you are renting a month-to-month apartment, then rent increases are more
+      likely to occur. In this case, landlords can raise the rent every month if they wish. But it's important to note
+      that many states require a 30 day notice before the rent is officially raised. This will give you time to find a
+      new place if you cannot afford the new rent price.</p>
+  </div>
+
+
+  <button class="accordion">Is renter's insurance required?</button>
+  <div class="panel">
+    <p>Most rentals these days require tenants to have insurance. Even if you're leasing a unit that doesn't mandate
+      having renter's insurance, it may be worthwhile to get one. Renter's insurance can protect you from any damages
+      caused by natural calamities, plumbing issues, theft, etc.</p>
+  </div>
+
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+<footer>
+  PropertyHub Malaysia Sdn. Bhd.
+</footer>
+
 </html>
