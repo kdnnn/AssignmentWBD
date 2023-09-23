@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color:#0000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    outline-style: double;
+    font-family: Helvetica;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.property h3 {
+text-align: left;    
+font-family: Montserrat, sans-serif;
+}
+
+.property-container {
+    background-image: url('https://images.pexels.com/photos/373893/pexels-photo-373893.jpeg?cs=srgb&dl=city-dawn-sky-373893.jpg&fm=jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.property-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.property {
+    width: 500px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.property img {
+    max-width: 450px;
+    max-height: 250px;
+    margin: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+p {
+    text-align: left;
+}
+
+
