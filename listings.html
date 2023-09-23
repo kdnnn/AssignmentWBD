@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" Property, Rentals, Malaysia>
-        <title>Listings</title>
-        <link href="layout.css" rel="stylesheet">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
-          </style>
-        <body>
-            <header>
-                <a href="index.html"><img src="PropertyHub.png" alt="logo" class="logo" width="200px"></a>
-                <img src="gura.gif" class="gif" width="50px" height="50px">
-            </header>
-                <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                      <span></span>
-                    </label>
+
+<head>
+    <meta charset="UTF-8" Property, Rentals, Malaysia>
+    <title>Rentals</title>
+    <link href="layout.css" rel="stylesheet">
+    <link href="listings.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="PropertyHub.png" alt="logo" class="logo" width="200px"></a>
+        <img src="gura.gif" class="gif" width="50px" height="50px">
+        <img src="rent.png" alt="Rent" class="logo" width="200px">
+    </header>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
                     <ul class="menu__box">
                         <li><a class="menu__item" href="index.html">Home</a></li>
                         <li><a class="menu__item" href="news.html">News</a></li>
@@ -33,8 +37,123 @@
                         <li><a class="menu__item" href="FAQ.html">FAQ</a></li>
                     </ul>
                   </div>
-            </body>
-        <footer>
-            PropertyHub Malaysia Sdn. Bhd.
-        </footer>
+
+    </div>
+
+    <div class="property-container">
+        <div class="property" data-price="750000">
+            <img src="https://www.simedarbyproperty.com/bandar-bukit-raja/nadira-3/img/keyfeatures-1.jpg"
+                alt="Property 1" width="700" height="450">
+            <h1>Nadira 3</h1>
+            <h2>Bandar Bukit Raja</h2>
+            <p><strong>Price:</strong> RM750,000</p>
+            <p><strong>Bedrooms:</strong> 4</p>
+            <p><strong>Bathrooms:</strong> 3</p>
+            <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="property">
+            <img src="https://www.newproject1u.com/images/uploads/project/317/NP1U_bandar-bukit-raja-athira-1.jpg"
+                alt="Property 2" width="700" height="450">
+            <h1>Athira</h1>
+            <h3>Bandar Bukit Raja</h3>
+            <p><strong>Price:</strong> RM798,000</p>
+            <p><strong>Bedrooms:</strong> 3</p>
+            <p><strong>Bathrooms:</strong> 2</p>
+            <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="property">
+            <img src="https://sg2-cdn.pgimgs.com/developer-listing/4044180/OUPHO.98222743.V800/Elmina-Green-1-Shah-Alam-Malaysia.jpg"
+                alt="Property 3" width="700" height="450">
+            <h1>Elmina Green</h1>
+            <h3>Shah Alam</h3>
+            <p><strong>Price:</strong> RM832,000</p>
+            <p><strong>Bedrooms:</strong> 2</p>
+            <p><strong>Bathrooms:</strong> 1</p>
+            <p><strong>Description:</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+
+        <div class="property">
+            <img src="https://www.simedarbyproperty.com/kl-east/east-57/images/img-architecture.jpg?v=2"
+                alt="Property 4" width="700" height="450">
+            <h1>East 57</h1>
+            <h3>Bandar Bukit Raja</h3>
+            <p><strong>Price:</strong> RM1,028,000</p>
+            <p><strong>Bedrooms:</strong> 5</p>
+            <p><strong>Bathrooms:</strong> 4</p>
+            <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="property">
+            <img src="https://th.bing.com/th/id/OIP.0R735tBBaj3e-1Izshyk2QHaJO?pid=ImgDet&rs=1" alt="Property 5"
+                width="700" height="450">
+            <h1>Nasmeh House</h1>
+            <h3>Bandar Bukit Raja</h3>
+            <p><strong>Price:</strong> RM1,320,000</p>
+            <p><strong>Bedrooms:</strong> 4</p>
+            <p><strong>Bathrooms:</strong> 3</p>
+            <p><strong>Description:</strong> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="property">
+            <img src="https://www.simedarbyproperty.com/sites/default/files/2020-07/1a.jpg" alt="Property 6" width="auto"
+                height="450">
+            <h1>The Residences</h1>
+           <h3>Putra Heights</h3>
+            <p><strong>Price:</strong> RM1,150,000</p>
+            <p><strong>Bedrooms:</strong> 2</p>
+            <p><strong>Bathrooms:</strong> 1</p>
+            <p><strong>Description:</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+
+        <div class="property">
+            <img src="https://besthqwallpapers.com/Uploads/31-3-2020/127029/thumb2-modern-home-design-exterior-gray-brick-walls-modern-country-house-house-project.jpg"
+                alt="Property 7" width="700" height="450">
+            <h1>Tullynagee House</h1>
+            <h3>Patrick Bradley Architects</h3>
+            <p><strong>Price:</strong> RM920,000</p>
+            <p><strong>Bedrooms:</strong> 5</p>
+            <p><strong>Bathrooms:</strong> 4</p>
+            <p><strong>Description:</strong> Consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+
+        <div class="property">
+            <img src="https://www.simedarbyproperty.com/serenia-city/serenia-anisa/img/image_anisa.jpg" alt="Property 8"
+                width="700" height="450">
+            <h1>Serenia Anisia</h1>
+            <h3>Serenia City</h3>
+            <p><strong>Price:</strong> RM898,000</p>
+            <p><strong>Bedrooms:</strong> 5</p>
+            <p><strong>Bathrooms:</strong> 4</p>
+            <p><strong>Description:</strong> Consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+
+        <div class="property">
+            <img src="https://www.simedarbyproperty.com/sites/default/files/2018-02/sime-darby-property-siphonia-cny-promotion.jpg"
+                alt="Property 9" width="700" height="450">
+            <h1>Chemara Hills</h1>
+            <h3>Seremban Semi</h3>
+            <p><strong>Price:</strong> RM788,000</p>
+            <p><strong>Bedrooms:</strong> 5</p>
+            <p><strong>Bathrooms:</strong> 4</p>
+            <p><strong>Description:</strong> Consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+
+        <div class="property">
+            <img src="https://sg1-cdn.pgimgs.com/developer-listing/4367079/OUPHO.120192118.V800/Rymba-Gardens-Jade-Hills-Kajang-Malaysia.jpg"
+                alt="Property 10" width="700" height="450">
+            <h1>Jade Hills</h1>
+            <h3>Kajang</h3>
+            <p><strong>Price:</strong> RM970,000</p>
+            <p><strong>Bedrooms:</strong> 2</p>
+            <p><strong>Bathrooms:</strong> 1</p>
+            <p><strong>Description:</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+    </div>
+</body>
+<footer>
+    PropertyHub Malaysia Sdn.Bhd.
+</footer>
+
 </html>

@@ -1,40 +1,224 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" Property, Rentals, Malaysia>
-        <title>Rentals</title>
-        <link href="layout.css" rel="stylesheet">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
-          </style>
-        <body>
-            <header>
-                <a href="index.html"><img src="PropertyHub.png" alt="logo" class="logo" width="200px"></a>
-                <img src="gura.gif" class="gif" width="50px" height="50px">
-            </header>
-                <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                      <span></span>
-                    </label>
-                    <ul class="menu__box">
-                        <li><a class="menu__item" href="index.html">Home</a></li>
-                        <li><a class="menu__item" href="news.html">News</a></li>
-                        <li><a class="menu__item" href="listings.html">Listings</a></li>
-                        <li><a class="menu__item" href="rent.html">Rentals</a></li>
-                        <li><a class="menu__item" href="payment.html">Payment</a></li>
-                        <li><a class="menu__item" href="loancalculator.html">Loan Calculator</a></li>
-                        <li><a class="menu__item" href="contact.html">Contact Us</a></li>
-                        <li><a class="menu__item" href="about.html">About Us</a></li>
-                        <li><a class="menu__item" href="subscribe.html">Subscribe</a></li>
-                        <li><a class="menu__item" href="advertise.html">Advertise</a></li>
-                        <li><a class="menu__item" href="feedback.html">Feedback</a></li>
-                        <li><a class="menu__item" href="FAQ.html">FAQ</a></li>
-                    </ul>
-                  </div>
-            </body>
-        <footer>
-            PropertyHub Malaysia Sdn. Bhd.
-        </footer>
+
+<head>
+    <meta charset="UTF-8" Property, Rentals, Malaysia>
+    <title>Rentals</title>
+    <link href="layout.css" rel="stylesheet">
+    <link href="rent.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="PropertyHub.png" alt="logo" class="logo" width="200px"></a>
+        <img src="gura.gif" class="gif" width="50px" height="50px">
+        <img src="rent.png" alt="Rent" class="logo" width="200px">
+    </header>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <li><a class="menu__item" href="index.html">Home</a></li>
+            <li><a class="menu__item" href="news.html">News</a></li>
+            <li><a class="menu__item" href="listings.html">Listings</a></li>
+            <li><a class="menu__item" href="rent.html">Rentals</a></li>
+            <li><a class="menu__item" href="payment.html">Payment</a></li>
+            <li><a class="menu__item" href="loancalculator.html">Loan Calculator</a></li>
+            <li><a class="menu__item" href="contact.html">Contact Us</a></li>
+            <li><a class="menu__item" href="about.html">About Us</a></li>
+            <li><a class="menu__item" href="subscribe.html">Subscribe</a></li>
+            <li><a class="menu__item" href="advertise.html">Advertise</a></li>
+            <li><a class="menu__item" href="feedback.html">Feedback</a></li>
+            <li><a class="menu__item" href="FAQ.html">FAQ</a></li>
+        </ul>
+    </div>
+    <h2>Rentals</h2>
+
+    <div class="property-container">
+        <div class="property">
+            <div class="property-image">
+                <img src="https://snoarch.com/wp-content/uploads/2021/05/PS_02-600x99999.jpg" alt="Property 1"
+                    width="400" height="250">
+            </div>
+            <div class="property-details">
+                <h1>Lyra</h1>
+                <h3>Bandar Bukit Raja</h3>
+                <p><strong>Price:</strong> RM4200 /month</p>
+                <p><strong>Bedrooms:</strong> 4</p>
+                <p><strong>Bathrooms:</strong> 3</p>
+                <button onclick="moreDetails('details1')">More Details</button>
+                <div class="property-details" id="details1">
+                    <p><strong>Amenities:</strong> Parking, Balcony, Security</p>
+                </div>
+            </div>
+            <div class="property-like">
+                <button class="like-button" id="like1" onclick="like('like1')">Like</button>
+                <a href="payment.html"><button>Pay rent</button></a>
+            </div>
+        </div>
+
+        <div class="property">
+            <div class="property-image">
+                <img src="https://sg1-cdn.pgimgs.com/developer-listing/4060766/OUPHO.99402772.V800/HARP-Taman-Desa-Tebrau-Johor-Bahru-Johor-Bahru-Malaysia.jpg"
+                    alt="Property 2" width="400" height="250">
+            </div>
+            <div class="property-details">
+                <h1>Parc Regency</h1>
+                <h2>Swiss Inn Johor Bahru</h2>
+                <p><strong>Price:</strong> RM3800 /month</p>
+                <p><strong>Bedrooms:</strong> 5</p>
+                <p><strong>Bathrooms:</strong> 3</p>
+                <button onclick="moreDetails('details2')">More Details</button>
+                <div class="property-details" id="details2">
+                    <p><strong>Amenities:</strong> Balcony, Gym, Security</p>
+                </div>
+            </div>
+            <div class="property-like">
+                <button class="like-button" id="like2" onclick="like('like2')">Like</button>
+                <a href="payment.html"><button>Pay rent</button></a>
+            </div>
+        </div>
+
+        <div class="property">
+            <div class="property-image">
+                <img src="https://visagearchitect.com/wp-content/uploads/2020/08/01_Carina_Facade_TypeC_HR-768x575.jpg"
+                    alt="Property 2" width="400" height="250">
+            </div>
+            <div class="property-details">
+                <h1>Carina</h1>
+                <h2>Visage Architect</h2>
+                <p><strong>Price:</strong> RM2850 /month</p>
+                <p><strong>Bedrooms:</strong> 3</p>
+                <p><strong>Bathrooms:</strong> 2</p>
+                <button onclick="moreDetails('details3')">More Details</button>
+                <div class="property-details" id="details3">
+                    <p><strong>Amenities:</strong> Balcony, Gym, Security</p>
+                </div>
+            </div>
+            <div class="property-like">
+                <button class="like-button" id="like3" onclick="like('like3')">Like</button>
+                <a href="payment.html"><button>Pay rent</button></a>
+            </div>
+        </div>
+
+        <div class="property">
+            <div class="property-image">
+                <img src="https://static.wixstatic.com/media/3a9e4f_66790c039435488cae39b10429fbca4e~mv2.jpg/v1/fill/w_340,h_204,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/3a9e4f_66790c039435488cae39b10429fbca4e~mv2.jpg"
+                    alt="Property 2" width="400" height="250">
+            </div>
+            <div class="property-details">
+                <h1>Westhill Avenue</h1>
+                <h2>Kuching</h2>
+                <p><strong>Price:</strong> RM3500 /month</p>
+                <p><strong>Bedrooms:</strong> 4</p>
+                <p><strong>Bathrooms:</strong> 3</p>
+                <button onclick="moreDetails('details4')">More Details</button>
+                <div class="property-details" id="details">
+                <p><strong>Amenities:</strong> Car Parking, Balcony, Gym, Security</p>
+                </div>
+            </div>
+            <div class="property-like">
+                <button class="like-button" id="like4" onclick="like('like4')">Like</button>
+                <a href="payment.html"><button>Pay rent</button></a>
+            </div>
+        </div>
+
+        <div class="property">
+            <div class="property-image">
+                <img src="https://media.edgeprop.my/s3fs-public/styles/newsthumbnails/public/field/image/senadiphase1b.jpg"
+                    alt="Property 2" width="400" height="250">
+            </div>
+            <div class="property-details">
+                <h1>Senadi Hills</h1>
+                <h2>Iskandar Puteri</h2>
+                <p><strong>Price:</strong> RM2300 /month</p>
+                <p><strong>Bedrooms:</strong> 3</p>
+                <p><strong>Bathrooms:</strong> 2</p>
+                <button onclick="moreDetails('details5')">More Details</button>
+                <div class="property-details" id="details5">
+                    <p><strong>Amenities:</strong> Balcony, Garden, Security</p>
+                </div>
+            </div>
+            <div class="property-like">
+                <button class="like-button" id="like5" onclick="like('like5')">Like</button>
+                <a href="payment.html"><button>Pay rent</button></a>
+            </div>
+        </div>
+
+        <div class="property">
+            <div class="property-image">
+                <img src="https://th.bing.com/th/id/OIP.SZO2UGSL78wmEGA8oYV02gHaFr?pid=ImgDet&rs=1" alt="Property 2"
+                    width="400" height="250">
+            </div>
+            <div class="property-details">
+                <h1>Chatchada Exclusive Ville</h1>
+                <h2>Bangkok</h2>
+                <p><strong>Price:</strong> RM5500 /month</p>
+                <p><strong>Bedrooms:</strong> 5</p>
+                <p><strong>Bathrooms:</strong> 3</p>
+                <button onclick="moreDetails('detailsn6')">More Details</button>
+                <div class="property-details" id="details">
+                    <p><strong>Amenities:</strong> Balcony, Car Parking, Gym, Security</p>
+                </div>
+            </div>
+            <div class="property-like">
+                <button class="like-button" id="like6" onclick="like('like6')">Like</button>
+                <a href="payment.html"><button>Pay Rent</button></a>
+            </div>
+        </div>
+
+        <div class="property">
+            <div class="property-image">
+                <img src="https://dwxbwps5boihg.cloudfront.net/property/pictures/3048103/fairfield_residence-tropicana_heights-propsocial-2_BpQTumCFTigny7i8XK8L_large.jpg?v=1472453888"
+                    alt="Property 2" width="400" height="250">
+            </div>
+            <div class="property-details">
+                <h1>Fairfield Residences</h1>
+                <h2>Tropicana Heights</h2>
+                <p><strong>Price:</strong> RM4000 /month</p>
+                <p><strong>Bedrooms:</strong> 4</p>
+                <p><strong>Bathrooms:</strong> 3</p>
+                <button onclick="moreDetails('details7')">More Details</button>
+                <div class="property-details" id="details7">
+                    <p><strong>Amenities:</strong> Balcony, Gym, Security, Parking</p>
+                </div>
+            </div>
+            <div class="property-like">
+                <button class="like-button" id="like7" onclick="like('like7')">Like</button>
+                <a href="payment.html"><button>Pay Rent</button></a>
+            </div>
+        </div>
+
+        <script>
+            function moreDetails(detailsId) {
+                const details = document.getElementById(detailsId);
+                if (details.style.display === "none" || details.style.display === "") {
+                    details.style.display = "block";
+                } else {
+                    details.style.display = "none";
+                }
+            }
+
+            function like(likeId) {
+                const likeButton = document.getElementById(likeId);
+                if (likeButton.classList.contains("liked")) {
+                    likeButton.classList.remove("liked");
+                    likeButton.textContent = "Like";
+                } else {
+                    likeButton.classList.add("liked");
+                    likeButton.textContent = "Liked";
+                }
+            }
+        </script>
+
+</body>
+<footer>
+    PropertyHub Malaysia Sdn. Bhd.
+</footer>
+
 </html>
