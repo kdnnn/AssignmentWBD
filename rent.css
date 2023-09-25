@@ -1,0 +1,105 @@
+body {
+    box-shadow: rgb(51, 51, 51) 20px 0px 40px,  rgb(51, 51, 51) -20px 0px 40px,
+    inset rgb(51, 21, 21) 0px 0px 40px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding-left: 50px;
+    text-shadow: 2px 2px 5px gray;
+}
+
+.property-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #95b6e3;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.property {
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+section#leftColumn.property-image {
+    flex: 0 0 40%;
+    max-width: 50%;
+    padding: 10px;
+    
+}
+
+section#rightColumn.property-details {
+    flex: 0 0 60%;
+    float: left;
+    padding: 10px;
+    padding-left: 10px;
+}
+
+
+.property-description {
+    display: none;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.property-like {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.like-button {
+    background-color: #ccc;
+    color: #333;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.liked {
+    background-color: #f7154a;
+    color: #fff;
+}
+
+p {
+    line-height: 0.9;
+    padding-top: 0px;
+    padding-left: 110px;
+}
+
+h2 {
+text-align: center;
+padding-left: 110px;
+
+}
+
+h3 {
+    padding-left: 110px;
+}
