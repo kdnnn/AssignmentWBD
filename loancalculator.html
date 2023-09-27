@@ -1,40 +1,101 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" Property, Rentals, Malaysia>
-        <title>Loan Calculator</title>
-        <link href="layout.css" rel="stylesheet">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
-          </style>
-        <body>
-            <header>
-                <a href="index.html"><img src="PropertyHub.png" alt="logo" class="logo" width="200px"></a>
-                <img src="gura.gif" class="gif" width="50px" height="50px">
-            </header>
-                <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                      <span></span>
-                    </label>
-                    <ul class="menu__box">
-                        <li><a class="menu__item" href="index.html">Home</a></li>
-                        <li><a class="menu__item" href="news.html">News</a></li>
-                        <li><a class="menu__item" href="listings.html">Listings</a></li>
-                        <li><a class="menu__item" href="rent.html">Rentals</a></li>
-                        <li><a class="menu__item" href="payment.html">Payment</a></li>
-                        <li><a class="menu__item" href="loancalculator.html">Loan Calculator</a></li>
-                        <li><a class="menu__item" href="contact.html">Contact Us</a></li>
-                        <li><a class="menu__item" href="about.html">About Us</a></li>
-                        <li><a class="menu__item" href="subscribe.html">Subscribe</a></li>
-                        <li><a class="menu__item" href="advertise.html">Advertise</a></li>
-                        <li><a class="menu__item" href="feedback.html">Feedback</a></li>
-                        <li><a class="menu__item" href="FAQ.html">FAQ</a></li>
-                    </ul>
-                  </div>
-            </body>
-        <footer>
-            PropertyHub Malaysia Sdn. Bhd.
-        </footer>
+
+<head>
+    <meta charset="UTF-8" Property, Rentals, Malaysia>
+    <title>Loan Calculator</title>
+    <link href="layout.css" rel="stylesheet">
+    <link href="loancalculator.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+    </style>
+
+<body>
+    <header>
+        <a href="index.html"><img src="PropertyHub.png" alt="logo" class="logo" width="200px"></a>
+        <img src="gura.gif" class="gif" width="50px" height="50px">
+    </header>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <li><a class="menu__item" href="index.html">Home</a></li>
+            <li><a class="menu__item" href="news.html">News</a></li>
+            <li><a class="menu__item" href="listings.html">Listings</a></li>
+            <li><a class="menu__item" href="rent.html">Rentals</a></li>
+            <li><a class="menu__item" href="payment.html">Payment</a></li>
+            <li><a class="menu__item" href="loancalculator.html">Loan Calculator</a></li>
+            <li><a class="menu__item" href="contact.html">Contact Us</a></li>
+            <li><a class="menu__item" href="about.html">About Us</a></li>
+            <li><a class="menu__item" href="subscribe.html">Subscribe</a></li>
+            <li><a class="menu__item" href="advertise.html">Advertise</a></li>
+            <li><a class="menu__item" href="feedback.html">Feedback</a></li>
+            <li><a class="menu__item" href="FAQ.html">FAQ</a></li>
+        </ul>
+    </div>
+    <h1> Loan Calculator</h1>
+
+    <form id="loanCalculator">
+        <label for="principal">Loan Amount(RM):</label>
+        <input type="number" id="principal" placeholder="e.g.500,000" required><br><br>
+
+        <label for="downPayment">Down Payment(RM):</label>
+        <input type="number" id="downPayment" placeholder="e.g. 500000" required><br><br>
+
+
+        <label for="interestRate">Interest Rate (%):</label>
+        <input type="number" id="interestRate" placeholder="e.g.3" required><br><br>
+
+        <label for="loanTerm">Loan Term (years):</label>
+        <input type="number" id="loanTerm" placeholder="e.g.15" required><br><br>
+
+        <button type="submit" onclick="calculateLoan()" value="submit">Calculate</button>
+        <button type="button" onclick="clearForm()">Clear</button>
+
+        <p><i>*Each bank has different interest rates.Please check the interest rates on each bank's website</i></p>
+
+    </form>
+
+    <p id="monthlyPayment">Monthly Payment: </p>
+
+    <script>
+       
+        function calculateLoan() {
+            // inputs
+            const principal = parseFloat(document.getElementById("principal").value);
+            const downPayment = parseFloat(document.getElementById("downPayment").value);
+            const interestRate = parseFloat(document.getElementById("interestRate").value) / 100;
+            const loanTerm = parseFloat(document.getElementById("loanTerm").value) * 12; // Convert years to months
+
+            // Validate inputs
+            if (principal < 0 || downPayment < 0 || interestRate < 0 || loanTerm <= 0) {
+                alert("Something error,please enter valid positive numbers.");
+                return;
+            }
+
+            //  down payment
+            const loanAmount = principal - downPayment;
+
+            // Calculate monthly payment
+            const monthlyInterest = interestRate / 12;
+            const monthlyPayment = loanAmount * (monthlyInterest * Math.pow(1 + monthlyInterest, loanTerm)) / (Math.pow(1 + monthlyInterest, loanTerm) - 1);
+
+            // Display the result
+            const resultElement = document.getElementById("monthlyPayment");
+            resultElement.textContent = "Monthly Payment: RM" + monthlyPayment.toFixed(2);
+
+
+
+        }
+        //javascript for clear button
+        function clearForm() {
+            document.getElementById("loanCalculator").reset();
+            document.getElementById("monthlyPayment").textContent = "Monthly Payment: ";
+        }
+    </script>
+
+</body>
 </html>

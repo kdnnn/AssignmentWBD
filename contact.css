@@ -6,7 +6,10 @@ h1 {
 }
 .social {
     text-align: center;
-    padding: 0;
+    margin-bottom: 10%;
+}
+.social > a:hover {
+    opacity: 50%;
 }
 .contact {
     text-align: center;
@@ -25,4 +28,17 @@ h1 {
 }
 .contact > p > a:hover {
     color: red;
+}
+.contact > img {
+    animation: fadeIn ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 10%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }

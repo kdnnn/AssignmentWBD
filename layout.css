@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Brulia Display';
+  src: url('Brulia-Display.eot');
+  src: local('Brulia Display'), local('Brulia-Display'),
+      url('Brulia-Display.eot?#iefix') format('embedded-opentype'),
+      url('Brulia-Display.woff2') format('woff2'),
+      url('Brulia-Display.woff') format('woff'),
+      url('Brulia-Display.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brulia Text';
+  src: url('Brulia-Text.eot');
+  src: local('Brulia Text'), local('Brulia-Text'),
+      url('Brulia-Text.eot?#iefix') format('embedded-opentype'),
+      url('Brulia-Text.woff2') format('woff2'),
+      url('Brulia-Text.woff') format('woff'),
+      url('Brulia-Text.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-family: Montserrat;
+}
 body {
     margin: auto;
 }
@@ -42,7 +70,7 @@ header {
     display: block;
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: #28aeff;
     transition-duration: .25s;
   }
@@ -73,10 +101,10 @@ header {
   .menu__item {
     display: block;
     padding: 12px 24px;
-    color: #333;
-    font-family: Montserrat, sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+    color: #000000;
+    font-family: Montserrat-ExtraBold, sans-serif;
+    font-size: 23px;
+    font-weight: 700;
     text-decoration: none;
     transition-duration: .25s;
   }
@@ -85,14 +113,53 @@ header {
     background-color: #28aeff;
     transform: scale(110%);
   }
+  .a {
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    position: static;
+    text-align: center;
+  }
+  .b {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    position: static;
+    text-align: center;
+  }
+  .b > a {
+    text-decoration: none;
+    color: #28aeff;
+  }
+  .b > a:hover {
+    color: red;
+  }
+  .headers {
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+  }
+  .a {
+    margin-top: 10%;
+    position: relative;
+    left: 0px;
+    right: 0px;
+  }
+  .b {
+    position: relative;
+    left: 0px;
+    right: 0px;
+  }
   footer {
+    color: white;
     background-color: #28aeff;
     font-family: Montserrat, sans-serif;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 18px;
     left: 0px;
     right: 0px;
     bottom: 0px;
     text-align: center;
-    position: fixed;
+    position: static;
     z-index: 99;
 }

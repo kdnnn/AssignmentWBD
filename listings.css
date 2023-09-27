@@ -1,17 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-header {
-    background-color:#0000;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
 h1 {
     margin: 0;
     text-align: center;
@@ -31,7 +17,8 @@ font-family: Montserrat, sans-serif;
 }
 
 .property-container {
-    background-image: url('https://images.pexels.com/photos/373893/pexels-photo-373893.jpeg?cs=srgb&dl=city-dawn-sky-373893.jpg&fm=jpg'); /* Replace with the path to your image */
+    transform: translate(-0%,-0.42%);
+    background-image: url('https://images.pexels.com/photos/373893/pexels-photo-373893.jpeg?cs=srgb&dl=city-dawn-sky-373893.jpg&fm=jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -45,6 +32,7 @@ font-family: Montserrat, sans-serif;
 }
 
 .property {
+    border-radius: 10px;
     width: 500px;
     margin: 10px;
     padding: 20px;

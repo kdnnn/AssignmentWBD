@@ -5,15 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PropertyHub</title>
         <!--
-            Web Design Assignment
+            Title : Web Design Assignment
+            AACS1483 DFT1S1G18
+            Tutor : Chua Chi Log
+            Lecturer : Tan Lai Kien
             Members : Qaydan Quek Qyun Theng, Wong Kin Xiang, Eng Joe Yee, Yu Pei Wei.
         -->
         <link href="layout.css" rel="stylesheet">
         <link href="home.css" rel="stylesheet">
         <link rel="icon" href="favicon.ico" type="image/icon">
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800&display=swap');
+            .welcome {
+                animation: fadeIn ease 2s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+            @keyframes fadeIn {
+                0% {
+                    opacity: 10%;
+                    letter-spacing: -10px;
+                }
+                100% {
+                    opacity: 100%;
+                    font-weight: normal;
+                    font-style: normal;
+                }
+            }
           </style>
     </head>
     <body>
@@ -43,7 +61,11 @@
               </div>
               <section><div class="banner">
                 <div class="welcome">Welcome to PropertyHub.</div>
-                <img src="https://images.unsplash.com/photo-1574218732130-6b19257fd9db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80">
+                <div class="sub-welcome">With over 10,000 properties sold in Kuala Lumpur as of 2023, rest assured you can trust us with your real estate needs!</div>
+                <video id="background-video" width=1200px autoplay loop muted>
+                <source src="Royalty Free Real Estate Stock Footage (HD).mp4" type="video/mp4">
+            </video>
+            <audio controls autoplay loop hidden><source src="Mustard ft. Roddy Ricch - Ballin' _ The Theorist Piano Cover (Axel in Harlem Meme).mp3" type="audio/mpeg"></audio>
             </div>
         </section>
             <a class="sub">Featured Listings</a>
@@ -66,8 +88,10 @@
                     </div>
                 </div>
               </div>
+              <div class="a">Site best viewed in 1024 x 768 resolution.</div>
+              <div class="b"><a href="terms.html" target="_blank">Terms & Conditions</a> | <a href="privacypolicy.html" target="_blank">Privacy Policy</a></div>
         </body>
         <footer>
-            PropertyHub Malaysia Sdn. Bhd.
+            All Rights Reserved@PropertyHub Sdn. Bhd.
         </footer>
 </html>
