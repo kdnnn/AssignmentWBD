@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" Property, Rentals, Malaysia>
+    <title>Rentals</title>
+    <link href="layout.css" rel="stylesheet">
+    <link href="property.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="PropertyHub.png" alt="logo" class="logo" width="200px"></a>
+        <img src="gura.gif" class="gif" width="50px" height="50px">
+    </header>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <li><a class="menu__item" href="index.html">Home</a></li>
+            <li><a class="menu__item" href="news.html">News</a></li>
+            <li><a class="menu__item" href="listings.html">Listings</a></li>
+            <li><a class="menu__item" href="rent.html">Rentals</a></li>
+            <li><a class="menu__item" href="payment.html">Payment</a></li>
+            <li><a class="menu__item" href="loancalculator.html">Loan Calculator</a></li>
+            <li><a class="menu__item" href="contact.html">Contact Us</a></li>
+            <li><a class="menu__item" href="about.html">About Us</a></li>
+            <li><a class="menu__item" href="subscribe.html">Subscribe</a></li>
+            <li><a class="menu__item" href="advertise.html">Advertise</a></li>
+            <li><a class="menu__item" href="feedback.html">Feedback</a></li>
+            <li><a class="menu__item" href="FAQ.html">FAQ</a></li>
+        </ul>
+    </div>
+
+    <body>
+        <h1>Senadi Hills</h1>
+        <div class="property">
+            <img src="https://media.edgeprop.my/s3fs-public/styles/newsthumbnails/public/field/image/senadiphase1b.jpg" alt="property 1"
+                width="1200px" height="800px">
+            <div class="property-like">
+                <button class="like-button" id="like2" onclick="like('like2')">Like</button>
+                <a href="payment.html"><button>Pay rent</button></a>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63817.41545010715!2d103.60737535339825!3d1.4226534823473551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0c6d922590e1%3A0x1fa40aaceb8992d2!2sIskandar%20Puteri%2C%20Johor!5e0!3m2!1sen!2smy!4v1696053369890!5m2!1sen!2smy"
+                        width="600px" height="300px" style="margin-left: 25%;"></iframe>
+                </div>
+                </container>
+            </div>
+            <div class="floorplan">
+                <img src="https://rimh2.domainstatic.com.au/9L4IPr6iUhkVuNv4b-9ek7GowRg=/fit-in/1920x1080/filters:format(jpeg):quality(80):no_upscale()/2017379420_3_1_211206_023921-w1200-h551" alt="floor plan"
+                    width="1000px" height="500px" style="margin-left: 8%">
+            </div>
+            <ol type="A">
+                <li>Guard House</li>
+                <li>BBQ Pit</li>
+                <li>Meditation Pavilion</li>
+                <li>Hedge Maze</li>
+                <li>Lily Pond</li>
+            </ol>
+            <div class="interiorFloorplan">
+                <img src="https://img.staticmb.com/mbimages/project/Photo_h310_w462/Floor-Plan-28-Nirmal-chhaya-Towers-Zirakpur-5029821_1183_1100_310_462.jpg
+                " width="700"
+                    height="400">
+            </div>
+            <aside>
+                <div class="details">
+                    <p>Every space presents an opportunity to pursue passion,
+                        to strengthen bonds, to fortify futures. The villas are
+                        exquisitely crafted to satisfy society’s movers and
+                        shakers. With generous and light-filled spaces designed
+                        to maximise natural light, these expansive and sleek
+                        homes are bound to take your breath away, one
+                        picturesque moment at a time.</p>
+                </div>
+            </aside>
+        </div>
+        <div class="back">
+            <a type="button" href="rent.html"><button>Back to Rentals</button></a>
+        </div>
+
+
+
+        <script>
+
+
+            function like(likeId) {
+                const likeButton = document.getElementById(likeId);
+                if (likeButton.classList.contains("liked")) {
+                    likeButton.classList.remove("liked");
+                    likeButton.textContent = "Like";
+                } else {
+                    likeButton.classList.add("liked");
+                    likeButton.textContent = "Liked";
+                }
+            }
+        </script>
+    </body>
+</html>
+    
